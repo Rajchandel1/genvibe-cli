@@ -1,0 +1,44 @@
+{
+  "name": "genvibe",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "AI coding CLI for creating, updating, previewing and understanding projects from your terminal.",
+  "keywords": [
+    "genvibe",
+    "ai",
+    "ai-cli",
+    "coding-agent",
+    "ai-coding-agent",
+    "developer-tools",
+    "cli",
+    "terminal",
+    "code-generation",
+    "code-assistant",
+    "qwen", 
+    "automation",
+    "web-development"
+  ],
+  "author": "Raj Chandel",
+  "bin": {
+    "vibe": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.7.2",
+    "chalk": "^5.3.0",
+    "ora": "^9.4.1",
+    "playwright-core": "^1.45.0",
+    "tsx": "^4.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}

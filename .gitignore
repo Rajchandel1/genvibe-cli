@@ -1,0 +1,15 @@
+node_modules/
+.gv/
+
+# Generated repository snapshots and local file backups
+repomix-output*.xml
+*.backup-*
+
+# Local secrets and machine-specific files
+.env
+.env.*
+!.env.example
+!.env.sample
+*.log
+.DS_Store
+Thumbs.db
